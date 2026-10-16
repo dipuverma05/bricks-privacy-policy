@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Bricks Mobile App | Brick By Brick Enterprises</title>
+  <meta name="description" content="Official Privacy Policy for Bricks Mobile Application operated by Brick By Brick Enterprises.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --header-bg: #0F172A;
+      --primary-orange: #EA580C;
+      --text-dark: #0F172A;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --accent-badge: #FFF7ED;
+      --accent-badge-border: #FFEDD5;
+      --accent-badge-text: #C2410C;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-dark);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Navigation / Brand Header */
+    header {
+      background-color: var(--header-bg);
+      color: #FFFFFF;
+      padding: 2.5rem 1.5rem;
+      border-bottom: 4px solid var(--primary-orange);
+    }
+
+    .header-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(234, 88, 12, 0.15);
+      border: 1px solid rgba(234, 88, 12, 0.4);
+      color: #FB923C;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    .brand-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+    }
+
+    .header-meta {
+      color: #94A3B8;
+      font-size: 0.875rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .header-meta span strong {
+      color: #E2E8F0;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 900px;
+      margin: 2.5rem auto 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 3rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    @media (max-width: 640px) {
+      .content-card {
+        padding: 1.75rem;
+      }
+      .brand-title {
+        font-size: 1.75rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-top: 2.25rem;
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1E293B;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #334155;
+      font-size: 0.975rem;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 0.975rem;
+    }
+
+    li strong {
+      color: var(--text-dark);
+    }
+
+    .highlight-box {
+      background-color: var(--accent-badge);
+      border-left: 4px solid var(--primary-orange);
+      padding: 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      color: #9A3412;
+    }
+
+    .permission-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.25rem 0;
+      font-size: 0.925rem;
+    }
+
+    .permission-table th,
+    .permission-table td {
+      border: 1px solid var(--border-color);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    .permission-table th {
+      background-color: #F1F5F9;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .permission-table tr:nth-child(even) {
+      background-color: #F8FAFC;
+    }
+
+    .permission-tag {
+      background: #E2E8F0;
+      color: #334155;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.825rem;
+      font-weight: 600;
+    }
+
+    .contact-card {
+      background-color: #F8FAFC;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-card p {
+      margin-bottom: 0.4rem;
+    }
+
+    footer {
+      background-color: var(--header-bg);
+      color: #94A3B8;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.875rem;
+      border-top: 1px solid #1E293B;
+    }
+
+    footer a {
+      color: var(--primary-orange);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="brand-badge">Official Legal Document</div>
+      <h1 class="brand-title">Bricks Mobile Application Privacy Policy</h1>
+      <div class="header-meta">
+        <span><strong>Application:</strong> Bricks</span>
+        <span><strong>Operated by:</strong> Brick By Brick Enterprises</span>
+        <span><strong>Effective Date:</strong> October 16, 2024</span>
+        <span><strong>Status:</strong> Active</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-card">
+      <div class="highlight-box">
+        <strong>Summary of Core Principles:</strong> At Bricks App, your trust is paramount. We do not sell your personal data. We only collect the information necessary to provide site progress tracking, construction workflows, budget calculations, and secure enterprise communications.
+      </div>
+
+      <h2>1. Introduction</h2>
+      <p>
+        Welcome to <strong>Bricks</strong> ("the Application"), developed, distributed, and maintained by <strong>Brick By Brick Enterprises</strong> ("Company", "we", "our", or "us"). We specialize in construction management, project monitoring, materials workflow, and client collaboration.
+      </p>
+      <p>
+        This Privacy Policy outlines how your personal, professional, and project data is collected, processed, and safeguarded when you access or interact with the Bricks Mobile App or its backend web services (accessible via <code>https://bricks-backend-fk3q.onrender.com/api</code>).
+      </p>
+
+      <h2>2. Information We Collect</h2>
+      <p>To deliver our services effectively, we collect the following categories of information:</p>
+
+      <h3>A. User & Account Credentials</h3>
+      <ul>
+        <li><strong>Personal Identifiers:</strong> Name, contact telephone/mobile number, email address, and office/residential address.</li>
+        <li><strong>Authentication Secrets:</strong> User-created Secure Personal Identification Numbers (PIN) and encrypted login tokens.</li>
+        <li><strong>Profile Image:</strong> Avatar or photograph chosen and uploaded to represent you in the workspace.</li>
+      </ul>
+
+      <h3>B. Construction Site & Operational Records</h3>
+      <ul>
+        <li><strong>Site Progress & Logs:</strong> Real-time work descriptions, daily updates, construction milestones, and supervisor notes.</li>
+        <li><strong>Financials & Invoicing:</strong> Budget figures, line-item expenses, invoices, and payment summaries.</li>
+        <li><strong>Materials & Vendors:</strong> Material requisitions, supplier records, and labour database entries entered in the Human Resources panel.</li>
+      </ul>
+
+      <h3>C. Media & Photographic Files</h3>
+      <ul>
+        <li><strong>Camera Captures & Gallery Photos:</strong> Site images, receipts, material delivery slips, and progress photos uploaded directly through the application.</li>
+      </ul>
+
+      <h3>D. Technical & Device Data</h3>
+      <ul>
+        <li><strong>Diagnostics:</strong> Device model, operating system version, network connection status, and app crash logs.</li>
+        <li><strong>Local Cache:</strong> Secure storage of session JWT tokens via <code>SharedPreferences</code> to keep you logged in securely.</li>
+      </ul>
+
+      <h2>3. Device Permissions & Purpose</h2>
+      <p>The Application requests explicit runtime permissions on your mobile operating system. These permissions are strictly mapped to features as follows:</p>
+
+      <table class="permission-table">
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>System Identifier</th>
+            <th>Explicit Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Camera</strong></td>
+            <td><span class="permission-tag">CAMERA</span></td>
+            <td>Allows users to photograph ongoing site works, material deliveries, receipts, and profile portraits directly within the app.</td>
+          </tr>
+          <tr>
+            <td><strong>Storage & Photos</strong></td>
+            <td><span class="permission-tag">READ_MEDIA_IMAGES</span> / <span class="permission-tag">READ_EXTERNAL_STORAGE</span></td>
+            <td>Enables uploading site records and profile images from your device photo library, and storing generated PDF invoices locally.</td>
+          </tr>
+          <tr>
+            <td><strong>Internet</strong></td>
+            <td><span class="permission-tag">INTERNET</span></td>
+            <td>Connects to our secure cloud backend server for synchronizing project data, downloading invoices, and authenticating users.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>4. How We Use Information</h2>
+      <p>The collected information is utilized solely for:</p>
+      <ul>
+        <li>Authenticating your identity and preventing unauthorized access.</li>
+        <li>Facilitating site monitoring, daily logs, and stakeholder updates.</li>
+        <li>Generating downloadable and printable PDF invoices and budget reports.</li>
+        <li>Syncing images and material requests with cloud storage.</li>
+        <li>Communicating vital technical support updates, notifications, and security notices.</li>
+      </ul>
+
+      <h2>5. Data Security & Storage</h2>
+      <p>
+        We employ robust technical and organizational security mechanisms. All communications between the mobile application and cloud servers are encrypted using modern Transport Layer Security (TLS/HTTPS). Authentication is governed by signed JSON Web Tokens (JWT).
+      </p>
+      <p>
+        Operational data is housed within secure cloud data centers with continuous monitoring. We retain user and project data only as long as necessary to support project continuity, warranty documentation, and legal compliance.
+      </p>
+
+      <h2>6. Sharing of Information</h2>
+      <div class="highlight-box">
+        <strong>Strict Policy:</strong> We do NOT sell, rent, or trade your personal information or site data to any third-party advertisers or data brokers under any circumstances.
+      </div>
+      <p>Data is shared only in the following limited situations:</p>
+      <ul>
+        <li><strong>Authorized Project Collaborators:</strong> Users granted access to your specific site project (e.g., project managers, assigned clients).</li>
+        <li><strong>Infrastructure Partners:</strong> Secure cloud hosting, database, and backend processing providers bound by non-disclosure agreements.</li>
+        <li><strong>Legal Compliance:</strong> When necessary to comply with valid legal processes, law enforcement mandates, or to protect the safety of users and public welfare.</li>
+      </ul>
+
+      <h2>7. User Control & Data Deletion Rights</h2>
+      <p>
+        Users hold full rights over their personal information. You can edit your profile information at any time directly through the <em>Settings &gt; Account User Profile</em> section of the app.
+      </p>
+      <p>
+        <strong>Right to Erasure (Account Deletion):</strong> You may request the permanent deletion of your account, profile, and personal records by emailing our Data Protection Desk at <a href="mailto:support@brickbybrick.enterprises">support@brickbybrick.enterprises</a>. Verification will be performed and eligible data removed within 30 days.
+      </p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>
+        The Bricks application is strictly designed for enterprise, professional, and commercial construction operations. It is not intended for use by minors under 18 years of age. We do not knowingly collect personal details from children.
+      </p>
+
+      <h2>9. Policy Revisions</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Updates will be indicated by a revised "Last Updated" date at the top of this document. Continued use of the Application signifies your consent to the amended policy terms.
+      </p>
+
+      <h2>10. Contact Us</h2>
+      <p>If you have questions, feedback, or inquiries concerning this Privacy Policy, please contact our administrative team:</p>
+
+      <div class="contact-card">
+        <p><strong>Organization:</strong> Brick By Brick Enterprises</p>
+        <p><strong>App:</strong> Bricks (Construction & Project Management)</p>
+        <p><strong>Email:</strong> <a href="mailto:support@brickbybrick.enterprises">support@brickbybrick.enterprises</a></p>
+        <p><strong>Cloud Services:</strong> <a href="https://bricks-backend-fk3q.onrender.com" target="_blank" rel="noopener">https://bricks-backend-fk3q.onrender.com</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Brick By Brick Enterprises. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;">Bricks Construction Management Platform</p>
+  </footer>
+
+</body>
+</html>
